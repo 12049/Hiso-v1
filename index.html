@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>كاكلا بي — التعلم ببساطة</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="logo">كاكلا<span class="dot">بي</span></div>
+      </div>
+      <nav class="main-nav">
+        <a href="lessons.html">الدروس</a>
+        <a href="library.html">المكتبة</a>
+        <a href="tests.html">الاختبارات</a>
+        <a href="teachers.html">المعلمين</a>
+      </nav>
+      <div class="actions">
+        <button class="btn btn-outline" id="toggle-theme">وضع ليلي</button>
+        <button class="btn btn-primary">تسجيل / إنشاء حساب</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>ابدأ رحلة التعلم مع كاكلا بي</h1>
+          <p>منصة تعليمية سهلة الاستخدام، مكتبة ضخمة، واختبارات تفاعلية لمتابعة تقدمك.</p>
+          <a href="lessons.html" class="btn btn-cta">ابدأ التعلم الآن</a>
+        </div>
+        <div class="hero-illustration" aria-hidden="true">
+          <!-- SVG placeholder -->
+          <svg width="320" height="220" viewBox="0 0 320 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="320" height="220" rx="16" fill="#E6FFFA"/>
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#06B6D4" font-size="18" font-family="Cairo, Roboto">رسمة تعليمية</text>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="features container">
+      <h2>مميزات المنصة</h2>
+      <div class="cards">
+        <div class="card">
+          <div class="icon">📱</div>
+          <h3>سهولة الاستخدام</h3>
+          <p>واجهة بسيطة ومباشرة تناسب جميع الأعمار.</p>
+        </div>
+        <div class="card">
+          <div class="icon">📚</div>
+          <h3>مكتبة ضخمة</h3>
+          <p>كتب، مقالات، وفيديوهات منظمة حسب التصنيف.</p>
+        </div>
+        <div class="card">
+          <div class="icon">📝</div>
+          <h3>اختبارات تفاعلية</h3>
+          <p>اختبارات مع تحليل فوري للأداء.</p>
+        </div>
+        <div class="card">
+          <div class="icon">👩‍🏫</div>
+          <h3>متابعة المعلمين</h3>
+          <p>صفحات معلمين ودروس مخصصة.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="updates container">
+      <h2>آخر التحديثات</h2>
+      <ul id="latest-updates" class="updates-list"></ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© 2025 كاكلا بي</div>
+      <div class="footer-links">
+        <a href="#">اتصل بنا</a>
+        <a href="#">سياسة الخصوصية</a>
+        <a href="#">الأسئلة الشائعة</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
+`
+
+lessons.html
+`html
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>الدروس — كاكلا بي</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand"><a href="index.html">كاكلا<span class="dot">بي</span></a></div>
+      <nav class="main-nav">
+        <a href="lessons.html" class="active">الدروس</a>
+        <a href="library.html">المكتبة</a>
+        <a href="tests.html">الاختبارات</a>
+        <a href="teachers.html">المعلمين</a>
+      </nav>
+      <div class="actions">
+        <button class="btn btn-outline" id="toggle-theme-2">وضع ليلي</button>
+        <button class="btn btn-primary">تسجيل</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="filters">
+      <input id="search-lessons" type="search" placeholder="ابحث عن درس أو مادة..." />
+      <select id="filter-subject">
+        <option value="">كل المواد</option>
+        <option value="math">رياضيات</option>
+        <option value="arabic">عربية</option>
+        <option value="science">علوم</option>
+      </select>
+      <select id="filter-level">
+        <option value="">كل المستويات</option>
+        <option value="beginner">مبتدئ</option>
+        <option value="intermediate">متوسط</option>
+        <option value="advanced">متقدم</option>
+      </select>
+    </section>
+
+    <section class="lessons-grid" id="lessons-grid"></section>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
