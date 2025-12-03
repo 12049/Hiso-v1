@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>الاختبارات — كاكلا بي</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand"><a href="index.html">كاكلا<span class="dot">بي</span></a></div>
+      <nav class="main-nav">
+        <a href="lessons.html">الدروس</a>
+        <a href="library.html">المكتبة</a>
+        <a href="tests.html" class="active">الاختبارات</a>
+        <a href="teachers.html">المعلمين</a>
+      </nav>
+      <div class="actions">
+        <button class="btn btn-outline" id="toggle-theme-4">وضع ليلي</button>
+        <button class="btn btn-primary">تسجيل</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>الاختبارات المتاحة</h2>
+    <div id="tests-list" class="tests-list"></div>
+
+    <!-- Modal اختبار -->
+    <div id="quiz-modal" class="modal hidden">
+      <div class="modal-content">
+        <button class="modal-close" id="close-quiz">×</button>
+        <div id="quiz-area"></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
